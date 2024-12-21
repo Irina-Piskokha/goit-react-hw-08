@@ -1,0 +1,27 @@
+.header {
+  padding: 20px;
+  border-bottom: 1px solid #fff;
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.wrapperLogin {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.link {
+  color: #f3f3f3;
+  font-weight: bold;
+  font-size: 17px;
+  text-decoration: none;
+}
+
+.active {
+  color: rgb(255, 97, 126);
+}

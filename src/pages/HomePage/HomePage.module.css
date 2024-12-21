@@ -1,0 +1,23 @@
+.wrapper {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.title {
+  color: #f4f4f4;
+  font-size: 48px;
+  line-height: 1.4;
+  width: 600px;
+  margin: 0 auto;
+  span {
+    color: rgb(255, 97, 126);
+    border-bottom: 1px solid rgb(255, 97, 126);
+  }
+}
+
+.text {
+  color: #f4f4f4;
+  font-size: 24px;
+  margin-top: 50px;
+  line-height: 1.2;
+}

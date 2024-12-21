@@ -1,6 +1,7 @@
 import { createSelector, createSlice, isAnyOf } from "@reduxjs/toolkit";
-import { addContact, deleteContact, fetchContacts } from "./contactsOps";
-import { selectContacts, selectNameFilter } from "./selectors";
+import { addContact, deleteContact, fetchContacts } from "../contactsOps";
+import { selectContacts } from "./contactsSelectors";
+import { selectNameFilter } from "../filters/filtersSelectors";
 
 const initialState = {
   items: [],
