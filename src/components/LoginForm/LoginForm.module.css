@@ -36,10 +36,10 @@
 .btn:hover,
 .btn:focus {
   background-color: rgb(255, 97, 126);
-  border: transparent;
+  border: 1px solid rgb(255, 97, 126);
 }
 
 .btn:active {
   background-color: rgb(248, 54, 90);
-  border: transparent;
+  border: 1px solid rgb(248, 54, 90);
 }

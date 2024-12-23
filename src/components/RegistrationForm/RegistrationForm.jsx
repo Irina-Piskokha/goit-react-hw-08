@@ -1,14 +1,27 @@
 import { useDispatch } from "react-redux";
 import s from "./RegistrationForm.module.css";
 import { Formik, Form, Field } from "formik";
-import { register } from "../../redux/auth/authOperations";
+import { register } from "../../redux/auth/operations";
+import { useNavigate } from "react-router-dom";
+import toast, { Toaster } from "react-hot-toast";
 
 const RegistrationForm = () => {
   const dispatch = useDispatch();
+  const navigate = useNavigate();
+
   const handleSubmit = (values, options) => {
-    dispatch(register(values));
+    dispatch(register(values))
+      .unwrap()
+      .then(() => {
+        toast.success(`Registration successful!`);
+        navigate("/contacts");
+      })
+      .catch(() => {
+        toast.error("Registration failed. Please try again.");
+      });
     options.resetForm();
   };
+
   const initialValues = {
     name: "",
     email: "",
@@ -18,6 +31,7 @@ const RegistrationForm = () => {
   return (
     <div className={s.wrapper}>
       <h2 className={s.title}>Register</h2>
+      <Toaster />
       <Formik onSubmit={handleSubmit} initialValues={initialValues}>
         <Form className={s.form}>
           <Field

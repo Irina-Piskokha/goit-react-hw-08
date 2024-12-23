@@ -52,7 +52,7 @@ const ContactForm = () => {
           name="name"
           id={nameFieldId}
           className={s.input}
-          placeholder="...enter name"
+          placeholder="Enter name"
         />
         <ErrorMessage name="name" component="span" className={s.validator} />
 
@@ -64,7 +64,7 @@ const ContactForm = () => {
           name="number"
           id={numberUseId}
           className={s.input}
-          placeholder="...enter number"
+          placeholder="Enter number"
         />
         <ErrorMessage
           name="number"

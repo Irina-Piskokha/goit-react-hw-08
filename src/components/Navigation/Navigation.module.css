@@ -3,6 +3,40 @@
   border-bottom: 1px solid #fff;
 }
 
+.wrapperUser {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+}
+
+.btn {
+  font-size: 14px;
+  padding: 5px 15px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  border: 1px solid #f4f4f4;
+  background-color: transparent;
+  color: #f4f4f4;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: rgb(255, 97, 126);
+  border: 1px solid rgb(255, 97, 126);
+}
+
+.btn:active {
+  background-color: rgb(248, 54, 90);
+  border: 1px solid rgb(248, 54, 90);
+}
+
+.user {
+  color: #f4f4f4;
+  text-align: right;
+}
+
 .list {
   display: flex;
   flex-direction: row;

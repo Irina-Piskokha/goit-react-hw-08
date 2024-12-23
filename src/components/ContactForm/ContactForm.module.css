@@ -3,28 +3,27 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  padding: 10px;
+  padding: 30px;
   margin: 20px auto;
-  border: 1px solid grey;
+  border: 1px solid #f4f4f4;
   border-radius: 5px;
-  width: 250px;
-  height: 200px;
+  width: 300px;
 }
 
 .label {
   text-align: left;
   margin-bottom: -7px;
   font-size: 12px;
+  color: #f4f4f4;
 }
 
 .input {
   width: 100%;
   outline: none;
   display: block;
-  height: 25px;
   border-radius: 5px;
   border: 1px solid #000;
-  padding: 5px 7px;
+  padding: 7px 20px;
   margin-bottom: 10px;
 }
 
@@ -48,12 +47,17 @@
   margin-top: 7px;
   border-radius: 5px;
   border: none;
-  height: 37px;
-  background-color: rgba(0, 128, 128, 0.353);
+  padding: 10px 20px;
   cursor: pointer;
+  background-color: rgb(255, 97, 126);
+  color: #f4f4f4;
 }
 
 .btn:hover,
 .btn:focus {
-  background-color: rgba(0, 128, 128, 0.6);
+  background-color: rgb(248, 54, 90);
+}
+
+.btn:active {
+  background-color: rgb(252, 27, 68);
 }
