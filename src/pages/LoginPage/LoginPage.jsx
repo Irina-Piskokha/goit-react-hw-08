@@ -1,5 +1,15 @@
+import { useEffect } from "react";
+import LoginForm from "../../components/LoginForm/LoginForm";
+
 const LoginPage = () => {
-  return <div>Login Page</div>;
+  useEffect(() => {
+    document.title = "Login page";
+  });
+  return (
+    <div>
+      <LoginForm />
+    </div>
+  );
 };
 
 export default LoginPage;

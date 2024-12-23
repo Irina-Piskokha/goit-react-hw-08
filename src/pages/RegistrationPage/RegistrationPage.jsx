@@ -1,14 +1,13 @@
 import { useEffect } from "react";
+import RegistrationForm from "../../components/RegistrationForm/RegistrationForm";
 
 const RegistrationPage = () => {
   useEffect(() => {
-    document.title = "R page";
+    document.title = "Registration page";
   });
   return (
     <div>
-      Registration PageRegistration PageRegistration PageRegistration
-      PageRegistration PageRegistration PageRegistration PageRegistration
-      PageRegistration PageRegistration Page
+      <RegistrationForm />
     </div>
   );
 };

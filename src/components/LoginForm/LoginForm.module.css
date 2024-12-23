@@ -1,0 +1,45 @@
+.wrapper {
+  margin-top: 60px;
+}
+
+.title {
+  color: #f4f4f4;
+  margin-bottom: 40px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.input {
+  padding: 13px 30px;
+  border-radius: 6px;
+  outline: none;
+  border: none;
+  font-size: 14px;
+}
+
+.btn {
+  padding: 13px 30px;
+  border-radius: 6px;
+  outline: none;
+  border: 1px solid #f4f4f4;
+  background-color: transparent;
+  color: #f4f4f4;
+  font-weight: bold;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: rgb(255, 97, 126);
+  border: transparent;
+}
+
+.btn:active {
+  background-color: rgb(248, 54, 90);
+  border: transparent;
+}

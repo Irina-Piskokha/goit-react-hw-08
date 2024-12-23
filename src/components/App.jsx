@@ -8,7 +8,7 @@ import RegistrationPage from "../pages/RegistrationPage/RegistrationPage";
 import LoginPage from "../pages/LoginPage/LoginPage";
 import ContactsPage from "../pages/ContactsPage/ContactsPage";
 import NotFoundPage from "../pages/NotFoundPage/NotFoundPage";
-import Navigation from "./Navigation/Navigation";
+import Layout from "./Layout";
 
 function App() {
   const dispatch = useDispatch();
@@ -18,13 +18,14 @@ function App() {
 
   return (
     <div>
-      <Navigation />
       <Routes>
-        <Route path="/" element={<HomePage />}></Route>
-        <Route path="/register" element={<RegistrationPage />}></Route>
-        <Route path="/login" element={<LoginPage />}></Route>
-        <Route path="/contacts" element={<ContactsPage />}></Route>
-        <Route path="*" element={<NotFoundPage />}></Route>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<HomePage />}></Route>
+          <Route path="contacts" element={<ContactsPage />}></Route>
+          <Route path="login" element={<LoginPage />}></Route>
+          <Route path="register" element={<RegistrationPage />}></Route>
+          <Route path="*" element={<NotFoundPage />}></Route>
+        </Route>
       </Routes>
     </div>
   );
