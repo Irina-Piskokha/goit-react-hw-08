@@ -10,7 +10,7 @@ const SearchBox = () => {
       <input
         type="text"
         name="search"
-        placeholder="...enter name"
+        placeholder="Enter name"
         className={s.searchForm}
         onChange={(e) => dispatch(changeFilter(e.target.value))}
       />

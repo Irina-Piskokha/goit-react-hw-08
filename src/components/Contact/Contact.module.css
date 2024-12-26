@@ -6,9 +6,10 @@
   width: 350px;
   height: 90px;
 
-  border: 1px solid black;
+  border: 1px solid #f4f4f4;
   border-radius: 5px;
   padding: 20px;
+  background-color: #eeeeee51;
 }
 
 .wrapFlex {
@@ -22,25 +23,40 @@
   display: flex;
   gap: 15px;
   align-items: center;
+  stroke: #f4f4f4;
+}
+
+.icon {
+  fill: #f4f4f4;
 }
 
 .titleName {
   font-size: 18px;
   font-weight: 600;
+  color: #f4f4f4;
+}
+
+.phone {
+  color: #f4f4f4;
 }
 
 .btn {
-  background-color: rgba(0, 128, 128, 0.353);
-  cursor: pointer;
   display: block;
-  border-radius: 5px;
-  padding: 5px 10px;
-  width: 120px;
   height: 40px;
+  width: 120px;
+  padding: 5px 10px;
+  border-radius: 5px;
   border: none;
+  cursor: pointer;
+  background-color: rgb(255, 97, 126);
+  color: #f4f4f4;
 }
 
 .btn:hover,
 .btn:focus {
-  background-color: rgba(0, 128, 128, 0.582);
+  background-color: rgb(248, 54, 90);
+}
+
+.btn:active {
+  background-color: rgb(252, 27, 68);
 }

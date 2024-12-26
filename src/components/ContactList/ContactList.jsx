@@ -11,7 +11,10 @@ const ContactList = () => {
 
   return (
     <div>
-      {loading && <h2>Loading...</h2>}
+      <h2 className={s.title}>
+        Your <span>contacts</span>
+      </h2>
+      {loading && <p>Loading...</p>}
       <ul className={s.list}>
         {filteredContacts.map((item) => {
           return (

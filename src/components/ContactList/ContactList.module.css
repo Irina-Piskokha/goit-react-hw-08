@@ -1,3 +1,13 @@
+.title {
+  color: #f4f4f4;
+  margin-bottom: 60px;
+}
+
+span {
+  color: rgb(255, 97, 126);
+  border-bottom: 1px solid rgb(255, 97, 126);
+}
+
 .list {
   display: flex;
   flex-direction: row;

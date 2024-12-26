@@ -1,5 +1,7 @@
 .text {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+  color: #f4f4f4;
+  text-align: left;
 }
 
 .searchForm {
